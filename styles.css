@@ -82,6 +82,7 @@ label {
   visibility: hidden;
   display: flex;
   flex-wrap: wrap;
+
   height: 460px;
   width: 460px;
   gap: 5px;
@@ -179,4 +180,50 @@ img {
 .test {
   display: flex;
   flex-direction: column;
+}
+
+@media (max-width: 1250px) {
+  .box {
+    font-size: 44px;
+  }
+  .header {
+    font-size: 55px;
+    margin-top: -150px;
+  }
+  .game-board {
+    height: 250px;
+    width: 250px;
+    gap: 0px;
+    margin-bottom: 25px;
+  }
+  .box {
+    height: 80px;
+    width: 80px;
+  }
+
+  .main {
+    display: none;
+    align-items: center;
+    gap: 0px;
+  }
+  .name-plates {
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+  .turn-display {
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.555);
+    height: auto;
+    color: white;
+    padding: 4px 16px;
+    border-radius: 20px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    text-align: center;
+  }
 }
