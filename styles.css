@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(t.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Yuji Mai", serif;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.header {
+  color: #ffedd5;
+  font-size: 4em;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  text-decoration: underline #ffedd5;
+}
+.main {
+  display: none;
+  align-items: center;
+  gap: 50px;
+}
+.player-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 35px;
+  align-items: center;
+}
+.names {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+label {
+  color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+.label-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.name-input {
+  padding: 5px;
+  border: 2px solid rgb(189, 61, 32);
+  box-shadow: 15px 15px 15px -5px black;
+}
+.name-input:focus {
+  transform: scale(1.05);
+  outline: none;
+}
+.submit-button {
+  width: 150px;
+  color: white;
+  font-size: 16px;
+  background-color: #1a1a1a8d;
+  border: 2px solid rgb(164, 59, 51);
+  padding: 8px 10px;
+  border-radius: 20px;
+}
+label {
+  font-size: 2em;
+  font-weight: 900;
+}
+.game-board {
+  visibility: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  height: 460px;
+  width: 460px;
+  gap: 5px;
+  align-items: space-between;
+  justify-content: space-between;
+  /* animation: fadeIn 3s; */
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.turn-display {
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.555);
+  height: auto;
+  color: white;
+  padding: 4px 16px;
+  border-radius: 20px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+button {
+  visibility: hidden;
+  background-color: #1a1a1a7f;
+  color: white;
+  font-size: 20px;
+  /* font-weight: 600; */
+  padding: 5px 10px;
+  border: 2px solid rgb(189, 61, 32, 0.7);
+  border-radius: 10px;
+  width: 150px;
+  /* font-family: "Dancing Script", cursive; */
+  /* font-family: 'Homemade Apple', cursive; */
+  font-family: "Yuji Mai", serif;
+}
+.box {
+  height: 150px;
+  width: 150px;
+  background-color: #ffedd5;
+  opacity: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 75px;
+}
+.name-plates {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.left,
+.right {
+  color: #ffedd5;
+  display: inherit;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2em;
+  padding: 15px 25px;
+  border: 2px solid #ffedd5;
+  min-width: 150px;
+  border-radius: 20px;
+}
+.name {
+  font-size: 1em;
+}
+.currentTurnStyle {
+  font-size: 2em;
+  background-color: #ffedd5;
+  border: 2px solid black;
+  border-radius: 20px;
+  color: black;
+}
+.winner {
+  background-color: #1a2e05;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fde047;
+}
+.image-container {
+  height: 100px;
+  width: 100px;
+  margin-bottom: -14px;
+}
+img {
+  height: 100%;
+  width: 100%;
+}
+.test {
+  display: flex;
+  flex-direction: column;
+}

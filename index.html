@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic-Tac-Crow</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link />
+    <link
+      rel="icon"
+      type="image/png"
+      href="favpng_american-crow-drawing-clip-art-illustration-common-raven.png"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Bad+Script&family=Dancing+Script:wght@400;500&family=Homemade+Apple&family=Yuji+Mai&display=swap");
+    </style>
+  </head>
+  <script src="scripts.js" defer></script>
+
+  <body>
+    <div class="container">
+      <div class="header">Tic-Tac-Toe</div>
+      <form class="player-form" action="">
+        <div class="names">
+          <div class="label-input">
+            <label for="player1">X</label>
+            <input
+              class="name-input"
+              id="player1"
+              type="text"
+              required
+              placeholder="Player 1"
+            />
+          </div>
+          <div class="label-input">
+            <label for="player2">O</label>
+            <input
+              class="name-input"
+              id="player2"
+              type="text"
+              required
+              placeholder="Player 2"
+            />
+          </div>
+        </div>
+        <input class="submit-button" type="submit" value="Start Game" />
+      </form>
+      <div class="main">
+        <div class="test">
+          <!-- <div class="image-container">
+            <img
+              src="favpng_american-crow-drawing-clip-art-illustration-common-raven.png"
+              alt=""
+            />
+          </div> -->
+          <div class="name-plates">
+            <div class="left">
+              <div class="name" id="player1name"></div>
+              <div class="bird">
+                <div class="icon">X</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="game-board"></div>
+        <div class="name-plates">
+          <div class="right">
+            <div class="name" id="player2name"></div>
+            <div class="icon">O</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="turn-display"></div>
+      <button class="reset">Reset Board</button>
+      <form action="">
+        <button type="submit" class="new-players">Select New Players</button>
+      </form>
+    </div>
+  </body>
+</html>
